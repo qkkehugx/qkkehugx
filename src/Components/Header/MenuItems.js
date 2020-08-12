@@ -5,12 +5,26 @@ import {Link} from 'react-router-dom';
 
 function MenuItems(props) {
   const {navActive} = props;
-    return (
-    <ul style={{
+  const styles = {
+    default: {
+      height: 'auto',
+      opacity: '1',
+      zIndex: 'auto',
+    },
+    responsive: {
       height: navActive ? 'auto' : '0',
       opacity: navActive ? '1' : '0',
       zIndex: navActive ? 'auto' : '-999'
-    }}>
+    },
+  };
+  let style = null;
+  if (typeof navActive === 'undefined') {
+    style = styles.default;
+  } else {
+    style = styles.responsive;
+  }
+    return (
+    <ul style={style}>
       <li>
         <Link to='/'>Home</Link>
       </li>
