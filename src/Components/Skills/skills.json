@@ -1,0 +1,69 @@
+{
+  "javascript": {
+    "logo": "",
+    "identifier": "javascript",
+    "name": "Javascript",
+      "technologies": {
+        "vanilla": {
+
+        },
+        "react": {
+
+        },
+        "react-native": {
+
+        },
+        "node": {
+
+        },
+        "express-js": {
+
+        }
+      }
+  },
+  "python": {
+    "logo": "",
+    "identifier": "python", 
+    "name": "Python",
+      "technologies": {
+        "vanilla": {
+
+        },
+        "django": {
+
+        },
+        "flask": {
+
+        }
+      }
+  },
+  "php": {
+    "logo": "",
+    "identifier": "php",
+    "name": "PHP",
+      "technologies": {
+        "vanilla": {
+
+        },
+        "laravel": {
+
+        }
+      }
+  },
+  "markup": {
+    "logo": "",
+    "identifier": "markup",
+    "name": "Markup",
+      "technologies": {
+        "html": {
+
+        },
+        "css": {
+
+        },
+        "bootstrap": {
+          
+        }
+      }
+  }
+}
