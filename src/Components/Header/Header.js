@@ -2,7 +2,9 @@ import React, {
   useEffect,
   useState,
 } from 'react';
-import {Link} from 'react-router-dom';
+
+import MenuItems from './MenuItems';
+
 import './Header.css'
 
 
@@ -11,6 +13,7 @@ function Header() {
     height: window.innerHeight,
     width: window.innerWidth,
   });
+  const [navActive, setNavActive] = useState(false);
   useEffect(()=>{
     function handleResize() {
       setDimensions({
@@ -29,23 +32,16 @@ function Header() {
       <div className='Logo'>
         Logo here
       </div>
-      <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/projects'>Projects</Link>
-        </li>
-        <li>
-          <Link to='/skills'>Skills</Link>
-        </li>
-        <li>
-          <Link to='/articles'>Articles</Link>
-        </li>
-        <li>
-          <Link to='/contacts'>Contacts</Link>
-        </li>
-      </ul>
+      {dimensions.width >= 860 ? 
+        <MenuItems/> 
+        : 
+        <div className='Dropdown'>
+          <p onClick={()=>{
+            setNavActive(!navActive)
+          }}>wow button</p>
+          <MenuItems navActive={navActive}/>
+        </div>
+        }
     </header>
   );
 };

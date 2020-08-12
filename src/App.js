@@ -22,7 +22,7 @@ function App() {
         <Header />
         <Switch>
           <div className='main-view'>
-            <Route path='/'>
+            <Route exact path='/'>
               <Home />
             </Route>
             <Route path='/projects'>
