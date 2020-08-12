@@ -1,0 +1,30 @@
+.Logo{
+  margin-left: 10px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+ul > li{
+  margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  background: gray;
+  overflow: auto;
+};
+
