@@ -1,0 +1,26 @@
+{
+  "javascript": {
+    "identifier": "javascript",
+    "logo": "",
+    "name": "Javascript",
+    "projects": {
+
+    }
+  },
+  "python": {
+    "identifier": "python",
+    "logo": "",
+    "name": "Python",
+    "projects": {
+
+    }
+  },
+  "php": {
+    "identifier": "php",
+    "logo": "",
+    "name": "PHP",
+    "projects": {
+      
+    }
+  }
+}
