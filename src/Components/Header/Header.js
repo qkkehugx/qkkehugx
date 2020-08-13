@@ -16,6 +16,9 @@ function Header() {
   const [navActive, setNavActive] = useState(false);
   useEffect(()=>{
     function handleResize() {
+      if (navActive && dimensions.width >= 860) {
+        setNavActive(false);
+      };
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
